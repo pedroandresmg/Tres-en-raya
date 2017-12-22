@@ -5,5 +5,3 @@ rvm:
 script:
   - cucumber
   - rspec
-
-  
