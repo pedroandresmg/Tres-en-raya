@@ -20,4 +20,10 @@ class Tablero
             @turno="x"
         end
     end
+
+    def mostrarGanador
+        if(@espacios[0]==@espacios[1] && @espacios[1]==@espacios[2])
+            return "gano " +@espacios[0]
+        end
+    end
 end

@@ -79,4 +79,14 @@ describe Tablero do
         @tablero.marcarCasilla(4)
         expect(@tablero.obtenerCasilla(4)).to eq "o"
     end
+
+    it "si comenzamos el juego, marco la casilla 1, marco la casilla 4, marco la casilla 2, marco la casilla 5, marco la casilla 3 deberia mostrar gano x" do
+    @tablero.comenzarJuego()
+    @tablero.marcarCasilla(1)
+    @tablero.marcarCasilla(4)
+    @tablero.marcarCasilla(2)
+    @tablero.marcarCasilla(5)
+    @tablero.marcarCasilla(3)
+    expect(@tablero.mostrarGanador).to eq "gano x"
+    end
 end
