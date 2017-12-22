@@ -90,27 +90,70 @@ describe Tablero do
     expect(@tablero.mostrarGanador).to eq "gano x"
     end
 
-    it "si comenzamos el juego, marco la casilla 1, marco la casilla 4, marco la casilla 2, marco la casilla 5, marco la casilla 3 deberia mostrar gano x" do
+    it "si comenzamos el juego, marco la casilla 3, marco la casilla 2, marco la casilla 6, marco la casilla 4, marco la casilla 9 deberia mostrar gano x" do
         @tablero.comenzarJuego()
+        @tablero.marcarCasilla(3)
         @tablero.marcarCasilla(2)
-        @tablero.marcarCasilla(1)
-        @tablero.marcarCasilla(5)
+        @tablero.marcarCasilla(6)
         @tablero.marcarCasilla(4)
-        @tablero.marcarCasilla(8)
-        expect(@tablero.mostrarGanador).to eq "gano x"
+        @tablero.marcarCasilla(9)
+    expect(@tablero.mostrarGanador).to eq "gano x"
     end
 
-    it "si comenzamos el juego, marco la casilla 1, marco la casilla 4, marco la casilla 2, marco la casilla 5, marco la casilla 3 deberia mostrar gano x" do
+    it "si comenzamos el juego, marco la casilla 7, marco la casilla 1, marco la casilla 8, marco la casilla 4, marco la casilla 9 deberia mostrar gano x" do
         @tablero.comenzarJuego()
+        @tablero.marcarCasilla(7)
         @tablero.marcarCasilla(1)
-        @tablero.marcarCasilla(2)
-        @tablero.marcarCasilla(5)
-        @tablero.marcarCasilla(3)
+        @tablero.marcarCasilla(8)
+        @tablero.marcarCasilla(4)
         @tablero.marcarCasilla(9)
         expect(@tablero.mostrarGanador).to eq "gano x"
     end
-    #para o
-    it "si comenzamos el juego, marco la casilla 1, marco la casilla 4, marco la casilla 2, marco la casilla 5, marco la casilla 3 deberia mostrar gano x" do
+
+    it "si comenzamos el juego, marco la casilla 1, marco la casilla 2, marco la casilla 4, marco la casilla 3, marco la casilla 7 deberia mostrar gano x" do
+        @tablero.comenzarJuego()
+        @tablero.marcarCasilla(1)
+        @tablero.marcarCasilla(2)
+        @tablero.marcarCasilla(4)
+        @tablero.marcarCasilla(3)
+        @tablero.marcarCasilla(7)
+        expect(@tablero.mostrarGanador).to eq "gano x"
+    end
+
+    it "si comenzamos el juego, marco la casilla 1, marco la casilla 2, marco la casilla 3, marco la casilla 5, marco la casilla 6, marco la casilla 8 deberia mostrar gano x" do
+        @tablero.comenzarJuego()
+        @tablero.marcarCasilla(1)
+        @tablero.marcarCasilla(2)
+        @tablero.marcarCasilla(3)
+        @tablero.marcarCasilla(5)
+        @tablero.marcarCasilla(6)
+        @tablero.marcarCasilla(8)
+        expect(@tablero.mostrarGanador).to eq "gano o"
+    end
+
+    it "si comenzamos el juego, marco la casilla 1, marco la casilla 4, marco la casilla 2, marco la casilla 5, marco la casilla 7, marco la casilla 6 deberia mostrar gano x" do
+        @tablero.comenzarJuego()
+        @tablero.marcarCasilla(1)
+        @tablero.marcarCasilla(4)
+        @tablero.marcarCasilla(2)
+        @tablero.marcarCasilla(5)
+        @tablero.marcarCasilla(7)
+        @tablero.marcarCasilla(6)
+        expect(@tablero.mostrarGanador).to eq "gano o"
+    end
+
+    it "si comenzamos el juego, marco la casilla 2, marco la casilla 1, marco la casilla 3, marco la casilla 5, marco la casilla 4, marco la casilla 9 deberia mostrar gano x" do
+        @tablero.comenzarJuego()
+        @tablero.marcarCasilla(2)
+        @tablero.marcarCasilla(1)
+        @tablero.marcarCasilla(3)
+        @tablero.marcarCasilla(5)
+        @tablero.marcarCasilla(4)
+        @tablero.marcarCasilla(9)
+        expect(@tablero.mostrarGanador).to eq "gano o"
+    end
+
+    it "si comenzamos el juego, marco la casilla 1, marco la casilla 3, marco la casilla 2, marco la casilla 5, marco la casilla 4, marco la casilla 7 deberia mostrar gano x" do
         @tablero.comenzarJuego()
         @tablero.marcarCasilla(1)
         @tablero.marcarCasilla(3)
@@ -120,6 +163,4 @@ describe Tablero do
         @tablero.marcarCasilla(7)
         expect(@tablero.mostrarGanador).to eq "gano o"
     end
-    #hacer para todo los casos
-    #para x y para o
 end
