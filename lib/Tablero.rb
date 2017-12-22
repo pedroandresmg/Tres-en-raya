@@ -12,6 +12,8 @@ class Tablero
         @espacios[casilla-1]=@turno
         if(@turno=="x")
             @turno="o"
+        else
+            @turno="x"
         end
     end
 end
