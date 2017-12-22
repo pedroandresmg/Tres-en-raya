@@ -6,7 +6,47 @@ describe Tablero do
     end
 
     it "si comenzamos el juego y obtengo el valor de la casilla 1 deberia devolver 1" do
-    @tablero.comenzarJuego()
-    expect(@tablero.obtenerCasilla(1)).to eq 1
+        @tablero.comenzarJuego()
+        expect(@tablero.obtenerCasilla(1)).to eq 1
+    end
+
+    it "si comenzamos el juego y obtengo el valor de la casilla 2 deberia devolver 2" do
+        @tablero.comenzarJuego()
+        expect(@tablero.obtenerCasilla(2)).to eq 2
+    end
+
+    it "si comenzamos el juego y obtengo el valor de la casilla 3 deberia devolver 3" do
+        @tablero.comenzarJuego()
+        expect(@tablero.obtenerCasilla(3)).to eq 3
+    end
+
+    it "si comenzamos el juego y obtengo el valor de la casilla 4 deberia devolver 4" do
+        @tablero.comenzarJuego()
+        expect(@tablero.obtenerCasilla(4)).to eq 4
+    end
+
+    it "si comenzamos el juego y obtengo el valor de la casilla 5 deberia devolver 5" do
+        @tablero.comenzarJuego()
+        expect(@tablero.obtenerCasilla(5)).to eq 5
+    end
+
+    it "si comenzamos el juego y obtengo el valor de la casilla 6 deberia devolver 6" do
+        @tablero.comenzarJuego()
+        expect(@tablero.obtenerCasilla(6)).to eq 6
+    end
+
+    it "si comenzamos el juego y obtengo el valor de la casilla 7 deberia devolver 7" do
+        @tablero.comenzarJuego()
+        expect(@tablero.obtenerCasilla(7)).to eq 7
+    end
+
+    it "si comenzamos el juego y obtengo el valor de la casilla 8 deberia devolver 8" do
+        @tablero.comenzarJuego()
+        expect(@tablero.obtenerCasilla(8)).to eq 8
+    end
+
+    it "si comenzamos el juego y obtengo el valor de la casilla 9 deberia devolver 9" do
+        @tablero.comenzarJuego()
+        expect(@tablero.obtenerCasilla(9)).to eq 9
     end
 end

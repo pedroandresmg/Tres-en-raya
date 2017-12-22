@@ -4,6 +4,6 @@ class Tablero
     end
 
     def obtenerCasilla(casilla)
-    return @espacios[0]
+        return @espacios[casilla-1]
     end
 end
