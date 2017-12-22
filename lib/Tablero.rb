@@ -39,5 +39,6 @@ class Tablero
         elsif(@espacios[2]==@espacios[4] && @espacios[4]==@espacios[6])
             return "gano " +@espacios[2]
         end
+        return " "
     end
 end

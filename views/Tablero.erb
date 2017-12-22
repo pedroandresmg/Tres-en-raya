@@ -1,7 +1,17 @@
 <h1>Tres en raya</h1>
 <table>
 <tr>
-  <th><form method='post' action='/marcar1'><input type='submit' value=<%=$valor1;%>></form></th>
+  <th>
+  <%if$valor1==1 && $juego.mostrarGanador==" "%>
+    <form method='post' action='/marcar1'>
+      <input type='submit' value=<%=$valor1;%>>
+    </form>
+    <%else%>
+    <form method='post' action='/marcar1'>
+    <input type='submit' value=<%=$valor1;%> disabled>
+  </form>
+  <%end%>
+  </th>
   <th><form method='post' action='/marcar2'><input type='submit' value=<%=$valor2;%>></form></th> 
   <th><form method='post' action='/marcar3'><input type='submit' value=<%=$valor3;%>></form></th> 
 </tr>
