@@ -2,28 +2,114 @@
 <table>
 <tr>
   <th>
-  <%if$valor1==1 && $juego.mostrarGanador==" "%>
-    <form method='post' action='/marcar1'>
-      <input type='submit' value=<%=$valor1;%>>
-    </form>
+    <%if$valor==1 && $juego.mostrarGanador==" "%>
+      <form method='post' action='/marcar1'>
+        <input type='submit' value=<%=$valor1;%>>
+      </form>
     <%else%>
-    <form method='post' action='/marcar1'>
-    <input type='submit' value=<%=$valor1;%> disabled>
-  </form>
-  <%end%>
+      <form method='post' action='/marcar1'>
+        <input type='submit' value=<%=$valor1;%> disabled>
+      </form>
+    <%end%>
   </th>
-  <th><form method='post' action='/marcar2'><input type='submit' value=<%=$valor2;%>></form></th> 
-  <th><form method='post' action='/marcar3'><input type='submit' value=<%=$valor3;%>></form></th> 
+
+  <th>
+    <%if$valor2==2 && $juego.mostrarGanador==" "%>
+      <form method='post' action='/marcar2'>
+        <input type='submit' value=<%=$valor2;%>>
+      </form>
+    <%else%>
+      <form method='post' action='/marcar2'>
+        <input type='submit' value=<%=$valor2;%> disabled>
+      </form>
+    <%end%>
+  </th>
+
+  <th>
+    <%if$valor3==3 && $juego.mostrarGanador==" "%>
+      <form method='post' action='/marcar3'>
+        <input type='submit' value=<%=$valor3;%>>
+      </form>
+    <%else%>
+      <form method='post' action='/marcar3'>
+        <input type='submit' value=<%=$valor3;%> disabled>
+      </form>
+    <%end%>
+  </th>
 </tr>
 <tr>
-  <td><form method='post' action='/marcar4'><input type='submit' value=<%=$valor4;%>></form></td>
-  <td><form method='post' action='/marcar5'><input type='submit' value=<%=$valor5;%>></form></td> 
-  <td><form method='post' action='/marcar6'><input type='submit' value=<%=$valor6;%>></form></td>
+  <th>
+    <%if$valor4==4 && $juego.mostrarGanador==" "%>
+      <form method='post' action='/marcar4'>
+        <input type='submit' value=<%=$valor4;%>>
+      </form>
+    <%else%>
+      <form method='post' action='/marcar4'>
+        <input type='submit' value=<%=$valor4;%> disabled>
+      </form>
+    <%end%>
+  </th>
+
+  <th>
+    <%if$valor5==5 && $juego.mostrarGanador==" "%>
+      <form method='post' action='/marcar5'>
+        <input type='submit' value=<%=$valor5;%>>
+      </form>
+    <%else%>
+      <form method='post' action='/marcar5'>
+        <input type='submit' value=<%=$valor5;%> disabled>
+      </form>
+    <%end%>
+  </th>
+
+  <th>
+    <%if$valor6==6 && $juego.mostrarGanador==" "%>
+      <form method='post' action='/marcar6'>
+        <input type='submit' value=<%=$valor6;%>>
+      </form>
+    <%else%>
+      <form method='post' action='/marcar6'>
+        <input type='submit' value=<%=$valor6;%> disabled>
+      </form>
+    <%end%>
+  </th>
 </tr>
 <tr>
-  <td><form method='post' action='/marcar7'><input type='submit' value=<%=$valor7;%>></form></td>
-  <td><form method='post' action='/marcar8'><input type='submit' value=<%=$valor8;%>></form></td> 
-  <td><form method='post' action='/marcar9'><input type='submit' value=<%=$valor9;%>></form></td>
+  <th>
+    <%if$valor7==7 && $juego.mostrarGanador==" "%>
+      <form method='post' action='/marcar7'>
+        <input type='submit' value=<%=$valor7;%>>
+      </form>
+    <%else%>
+      <form method='post' action='/marcar7'>
+        <input type='submit' value=<%=$valor7;%> disabled>
+      </form>
+    <%end%>
+  </th>
+
+  <th>
+    <%if$valor8==8 && $juego.mostrarGanador==" "%>
+      <form method='post' action='/marcar8'>
+        <input type='submit' value=<%=$valor8;%>>
+      </form>
+    <%else%>
+      <form method='post' action='/marcar8'>
+        <input type='submit' value=<%=$valor8;%> disabled>
+      </form>
+    <%end%>
+  </th>
+
+  <th>
+    <%if$valor9==9 && $juego.mostrarGanador==" "%>
+      <form method='post' action='/marcar9'>
+        <input type='submit' value=<%=$valor9;%>>
+      </form>
+    <%else%>
+      <form method='post' action='/marcar9'>
+        <input type='submit' value=<%=$valor9;%> disabled>
+      </form>
+    <%end%>
+  </th>
 </tr>
 </table>
 
