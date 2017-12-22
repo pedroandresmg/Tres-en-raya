@@ -6,4 +6,8 @@ class Tablero
     def obtenerCasilla(casilla)
         return @espacios[casilla-1]
     end
+
+    def marcarCasilla(casilla)
+        @espacios[casilla-1]="x"
+    end
 end
