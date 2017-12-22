@@ -10,6 +10,10 @@ class Tablero
 
     def marcarCasilla(casilla)
         @espacios[casilla-1]=@turno
+        cambiarTurno
+    end
+
+    def cambiarTurno
         if(@turno=="x")
             @turno="o"
         else
