@@ -111,3 +111,16 @@ D, [2017-12-22T11:05:45.617034 #11036] DEBUG -- : REQUESTING PAGE: GET /Tablero 
 D, [2017-12-22T11:05:45.658388 #11036] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
 D, [2017-12-22T11:05:45.700867 #11036] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
 D, [2017-12-22T11:05:45.744882 #11036] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
+D, [2017-12-22T12:12:31.271652 #9900] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
+D, [2017-12-22T12:13:36.893577 #2824] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
+D, [2017-12-22T12:13:37.038178 #2824] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
+D, [2017-12-22T12:13:37.057179 #2824] DEBUG -- : REQUESTING PAGE: POST /marcar1 with {} and HTTP headers {"HTTP_REFERER"=>"/Tablero"}
+D, [2017-12-22T12:13:37.101860 #2824] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
+D, [2017-12-22T12:13:37.139862 #2824] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
+D, [2017-12-22T12:13:37.173859 #2824] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
+D, [2017-12-22T12:13:37.207862 #2824] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
+D, [2017-12-22T12:13:37.259883 #2824] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
+D, [2017-12-22T12:13:37.299860 #2824] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
+D, [2017-12-22T12:13:37.339933 #2824] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
+D, [2017-12-22T12:13:37.375959 #2824] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}
+D, [2017-12-22T12:13:37.413731 #2824] DEBUG -- : REQUESTING PAGE: GET /Tablero with {} and HTTP headers {}

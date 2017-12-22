@@ -1,11 +1,17 @@
 require 'sinatra'
+require './lib/Tablero.rb'
+
+$juego=Tablero.new
 
 get '/Tablero' do
-    @valor1="1"
+    $juego.comenzarJuego
+    @valor1=$juego.obtenerCasilla(1)
     erb :Tablero
 end
 
 post '/marcar1' do
-    @valor1="x"
+    $juego.marcarCasilla(1)
+    @valor1=$juego.obtenerCasilla(1)
     erb :Tablero
 end
+
