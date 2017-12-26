@@ -3,7 +3,7 @@ require './lib/Tablero.rb'
 
 $juego=Tablero.new
 
-get '/' do
+get '/Tablero' do
     $juego.comenzarJuego
     $valor1=$juego.obtenerCasilla(1)
     $valor2=$juego.obtenerCasilla(2)
