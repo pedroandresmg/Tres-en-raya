@@ -71,4 +71,6 @@ post '/marcar9' do
     erb :Tablero
 end
 
-
+get '/' do
+    erb :Menu
+end
