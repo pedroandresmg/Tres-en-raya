@@ -41,4 +41,12 @@ class Tablero
         end
         return " "
     end
+
+    def duenoDelTurno
+        if(@turno=="x")
+            return "Es el turno del jugador: x"
+        else
+            return "Es el turno del jugador: o"
+        end
+    end
 end

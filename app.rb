@@ -14,6 +14,7 @@ get '/Tablero' do
     $valor7=$juego.obtenerCasilla(7)
     $valor8=$juego.obtenerCasilla(8)
     $valor9=$juego.obtenerCasilla(9)
+    $duenoDelTurno=$juego.duenoDelTurno
     erb :Tablero
 end
 

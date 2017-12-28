@@ -163,4 +163,10 @@ describe Tablero do
         @tablero.marcarCasilla(7)
         expect(@tablero.mostrarGanador).to eq "gano o"
     end
+
+    it "si comenzamos el juego, marco la casilla 1, deberia mostrar Es el turno del jugador: o" do
+        @tablero.comenzarJuego()
+        @tablero.marcarCasilla(1)
+        expect(@tablero.duenoDelTurno).to eq "Es el turno del jugador: o"
+    end
 end

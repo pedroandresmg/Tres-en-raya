@@ -112,7 +112,10 @@
   </th>
 </tr>
 </table>
-<h2>Es el turno del jugador: x</h2>
+
+<%if$juego.mostrarGanador==" "%>
+  <h3><%=$juego.duenoDelTurno;%></h3>
+<%end%>
 
 <form action="/" class="inline">
 <button class="float-left submit-button" >Salir</button>
@@ -122,4 +125,4 @@
 <button class="float-left submit-button" >Reiniciar partida</button>
 </form>
 
-<h1><%=$juego.mostrarGanador;%></h1>
+<h2><%=$juego.mostrarGanador;%></h2>
