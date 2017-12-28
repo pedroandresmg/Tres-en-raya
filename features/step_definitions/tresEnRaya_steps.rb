@@ -17,3 +17,7 @@ Given("visito la pagina del juego") do
   Then("deberia marcar una {string}") do |string|
     last_response.body.should =~ /#{string}/m
   end
+
+  Given("visito la pagina de la aplicacion") do
+    visit '/'
+  end
