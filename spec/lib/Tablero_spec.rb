@@ -87,7 +87,7 @@ describe Tablero do
         @tablero.marcarCasilla(2)
         @tablero.marcarCasilla(5)
         @tablero.marcarCasilla(3)
-    expect(@tablero.mostrarGanador).to eq "gano x"
+    expect(@tablero.mostrarGanador).to eq "Gano el jugador: x"
     end
 
     it "si comenzamos el juego, marco la casilla 3, marco la casilla 2, marco la casilla 6, marco la casilla 4, marco la casilla 9 deberia mostrar gano x" do
@@ -97,7 +97,7 @@ describe Tablero do
         @tablero.marcarCasilla(6)
         @tablero.marcarCasilla(4)
         @tablero.marcarCasilla(9)
-    expect(@tablero.mostrarGanador).to eq "gano x"
+    expect(@tablero.mostrarGanador).to eq "Gano el jugador: x"
     end
 
     it "si comenzamos el juego, marco la casilla 7, marco la casilla 1, marco la casilla 8, marco la casilla 4, marco la casilla 9 deberia mostrar gano x" do
@@ -107,7 +107,7 @@ describe Tablero do
         @tablero.marcarCasilla(8)
         @tablero.marcarCasilla(4)
         @tablero.marcarCasilla(9)
-        expect(@tablero.mostrarGanador).to eq "gano x"
+        expect(@tablero.mostrarGanador).to eq "Gano el jugador: x"
     end
 
     it "si comenzamos el juego, marco la casilla 1, marco la casilla 2, marco la casilla 4, marco la casilla 3, marco la casilla 7 deberia mostrar gano x" do
@@ -117,7 +117,7 @@ describe Tablero do
         @tablero.marcarCasilla(4)
         @tablero.marcarCasilla(3)
         @tablero.marcarCasilla(7)
-        expect(@tablero.mostrarGanador).to eq "gano x"
+        expect(@tablero.mostrarGanador).to eq "Gano el jugador: x"
     end
 
     it "si comenzamos el juego, marco la casilla 1, marco la casilla 2, marco la casilla 3, marco la casilla 5, marco la casilla 6, marco la casilla 8 deberia mostrar gano x" do
@@ -128,7 +128,7 @@ describe Tablero do
         @tablero.marcarCasilla(5)
         @tablero.marcarCasilla(6)
         @tablero.marcarCasilla(8)
-        expect(@tablero.mostrarGanador).to eq "gano o"
+        expect(@tablero.mostrarGanador).to eq "Gano el jugador: o"
     end
 
     it "si comenzamos el juego, marco la casilla 1, marco la casilla 4, marco la casilla 2, marco la casilla 5, marco la casilla 7, marco la casilla 6 deberia mostrar gano x" do
@@ -139,7 +139,7 @@ describe Tablero do
         @tablero.marcarCasilla(5)
         @tablero.marcarCasilla(7)
         @tablero.marcarCasilla(6)
-        expect(@tablero.mostrarGanador).to eq "gano o"
+        expect(@tablero.mostrarGanador).to eq "Gano el jugador: o"
     end
 
     it "si comenzamos el juego, marco la casilla 2, marco la casilla 1, marco la casilla 3, marco la casilla 5, marco la casilla 4, marco la casilla 9 deberia mostrar gano x" do
@@ -150,7 +150,7 @@ describe Tablero do
         @tablero.marcarCasilla(5)
         @tablero.marcarCasilla(4)
         @tablero.marcarCasilla(9)
-        expect(@tablero.mostrarGanador).to eq "gano o"
+        expect(@tablero.mostrarGanador).to eq "Gano el jugador: o"
     end
 
     it "si comenzamos el juego, marco la casilla 1, marco la casilla 3, marco la casilla 2, marco la casilla 5, marco la casilla 4, marco la casilla 7 deberia mostrar gano x" do
@@ -161,7 +161,7 @@ describe Tablero do
         @tablero.marcarCasilla(5)
         @tablero.marcarCasilla(4)
         @tablero.marcarCasilla(7)
-        expect(@tablero.mostrarGanador).to eq "gano o"
+        expect(@tablero.mostrarGanador).to eq "Gano el jugador: o"
     end
 
     it "si comenzamos el juego, marco la casilla 1, deberia mostrar Es el turno del jugador: o" do
